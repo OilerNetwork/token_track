@@ -15,3 +15,9 @@ print('distribution address:          ' + addresses.oiler_distribution)
 print('private distribution address:  ' + addresses.oiler_private_distribution)
 print('advisors distribution address: ' + addresses.oiler_advisors_distribution)
 
+# print some totals
+oiler_decimals = 18 # contracts.oiler_token.functions.decimals().call()
+oiler_total_supply = 100_000_000_000_000_000_000_000_000 # contracts.oiler_token.functions.totalSupply().call()
+print('decimals:                      ' + str(oiler_decimals))
+print('total supply:                  ' + f"{oiler_total_supply:,}")
+print('total supply std:              ' + f"{int(oiler_total_supply / 10**oiler_decimals):,}")
