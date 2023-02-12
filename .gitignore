@@ -1,5 +1,7 @@
 # secrets
 keys.py
+test-state-85_20230212.json
+test-state-100_20230212.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

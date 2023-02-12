@@ -1,7 +1,10 @@
+import logging
 import ethereum
 import addresses
 import abis
 import contracts
+
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # block = w3.eth.getBlock('latest') # get latest block details
 # block_alt = w3.eth.blockNumber # get latest block number
@@ -21,3 +24,15 @@ oiler_total_supply = 100_000_000_000_000_000_000_000_000 # contracts.oiler_token
 print('decimals:                      ' + str(oiler_decimals))
 print('total supply:                  ' + f"{oiler_total_supply:,}")
 print('total supply std:              ' + f"{int(oiler_total_supply / 10**oiler_decimals):,}")
+
+# now get all token holders, order them, display some statistics
+# https://web3py.readthedocs.io/en/v5/examples.html#advanced-example-fetching-all-token-transfer-events
+# logging.debug("Debug message")
+# logging.info("Info message")
+# logging.warning("Warning message")
+# logging.error("Error message")
+
+# check the unclaimed tokens in various distributions, check the claimable and locked values
+
+# here are the allowances for team
+# https://revoke.cash/address/0xeaab5ec0f9dc67d9e2810c02117abb33537a68d8
