@@ -8,3 +8,21 @@ oiler_ecosystem_distribution = '0x75B51DD46eC4430121f5a5fA6AeD7dF06F99868f'
 oiler_foundation_distribution = '0xbE25a20497bcE2764659e102F8c1BDBdC4D8DB5c'
 oiler_liquidity_distribution = '0xAE2EFb7716AB58a56008CBeC9514C51c12742205'
 oiler_uniswap_v2_pool = '0x0E9C8107682AB88604B4FBf847eeeCeaCF38E9E6'
+lbp_owner = '0xA94db69502920A657F8685978e62D3E3B9762adf'
+oiler_staking = '0xe546f8f17aff17c05dac9f9b4f9957f725fab087'
+pool_token = '0x0e9c8107682ab88604b4fbf847eeeceacf38e9e6'
+
+lookup = {
+    oiler_token: "oiler_token",
+    oiler_distribution: "oiler_distribution",
+    oiler_private_distribution: "oiler_private_distribution",
+    oiler_advisors_distribution: "oiler_advisors_distribution",
+    oiler_team_distribution: "oiler_team_distribution",
+    oiler_ecosystem_distribution: "oiler_ecosystem_distribution",
+    oiler_foundation_distribution: "oiler_foundation_distribution",
+    oiler_liquidity_distribution: "oiler_liquidity_distribution",
+    oiler_uniswap_v2_pool: "oiler_uniswap_v2_pool",
+    lbp_owner: 'lbp_owner',
+    oiler_staking: 'oiler_staking',
+    pool_token: 'pool_token'
+}

@@ -1,5 +1,8 @@
 # secrets
 keys.py
+address_comments.py
+sorted_holdings.json
+sorted_holdings.csv
 test-state-85_20230212.json
 test-state-100_20230212.json
 
