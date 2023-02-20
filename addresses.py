@@ -9,6 +9,12 @@ oiler_foundation_distribution = '0xbE25a20497bcE2764659e102F8c1BDBdC4D8DB5c'
 oiler_liquidity_distribution = '0xAE2EFb7716AB58a56008CBeC9514C51c12742205'
 oiler_uniswap_v2_pool = '0x0E9C8107682AB88604B4FBf847eeeCeaCF38E9E6'
 lbp_owner = '0xA94db69502920A657F8685978e62D3E3B9762adf'
+lbp = '0xB36C422F3f5b1dD9d9ae26f3C02771F7E765eBEc'
+lbp_exchange_proxy = '0x3E66B66Fd1d0b02fDa6C811Da9E0547970DB2f21'
+lbp_bfactory = '0x9424B1412450D0f8Fc2255FAf6046b98213B76Bd'
+mev_bot = '0x0000000000007F150Bd6f54c40A34d7C3d5e9f56'
+mevalphaleak_eth = '0x666f80a198412bCb987c430831B57AD61facB666'
+disperse_funded = '0x1c23faE057469757642a7EA479b867F1900E7F2F'
 oiler_staking = '0xe546f8f17aff17c05dac9f9b4f9957f725fab087'
 pool_token = '0x0e9c8107682ab88604b4fbf847eeeceacf38e9e6'
 
@@ -23,6 +29,12 @@ lookup = {
     oiler_liquidity_distribution: "oiler_liquidity_distribution",
     oiler_uniswap_v2_pool: "oiler_uniswap_v2_pool",
     lbp_owner: 'lbp_owner',
+    lbp: 'lbp',
+    lbp_exchange_proxy: 'lbp_exchange_proxy',
+    lbp_bfactory: 'lbp_bfactory',
+    mev_bot: 'mev_bot',
+    mevalphaleak_eth: 'mevalphaleak_eth',
+    disperse_funded: 'disperse_funded',
     oiler_staking: 'oiler_staking',
     pool_token: 'pool_token'
 }
