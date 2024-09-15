@@ -5,6 +5,7 @@ sorted_holdings.json
 sorted_holdings.csv
 test-state-85_20230212.json
 test-state-100_20230212.json
+oiler
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

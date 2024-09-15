@@ -137,7 +137,7 @@ class EventScanner:
         """Get Ethereum block timestamp"""
         try:
             self.incr_call_count()
-            block_info = self.web3.eth.getBlock(block_num)
+            block_info = self.web3.eth.get_block(block_num)
         except BlockNotFound:
             # Block was not mined yet,
             # minor chain reorganisation?
@@ -166,7 +166,7 @@ class EventScanner:
         # Do not scan all the way to the final block, as this
         # block might not be mined yet
         self.incr_call_count()
-        return self.web3.eth.blockNumber - 1
+        return self.web3.eth.block_number - 1
 
     def get_last_scanned_block(self) -> int:
         return self.state.get_last_scanned_block()
@@ -421,9 +421,10 @@ def _fetch_events_for_all_contracts(
         codec,
         address=argument_filters.get("address"),
         argument_filters=argument_filters,
-        fromBlock=from_block,
-        toBlock=to_block
     )
+
+    event_filter_params['fromBlock'] = from_block
+    event_filter_params['toBlock'] = to_block
 
     logger.debug("Querying eth_getLogs with the following parameters: %s", event_filter_params)
 
@@ -615,7 +616,7 @@ if __name__ == "__main__":
         # Remove the default JSON-RPC retry middleware
         # as it correctly cannot handle eth_getLogs block range
         # throttle down.
-        provider.middlewares.clear()
+        provider.middlewares = []
 
         web3 = Web3(provider)
 
